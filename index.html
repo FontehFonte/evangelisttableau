@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechFixHub | Submit Your Order</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>TechFixHub</h1>
+      <p>Your One-Stop Solution for All Tech Needs</p>
+    </div>
+  </header>
 
+  <section class="hero">
+    <img src="assets/hero.jpg" alt="Tech background" />
+  </section>
+
+  <section class="form-section">
+    <h2>Submit Your Technical Order</h2>
+    <form action="https://formspree.io/f/mnqkoqey" method="POST" enctype="multipart/form-data">
+      <label for="name">Full Name:</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="description">Order Description:</label>
+      <textarea name="description" id="description" rows="5" required></textarea>
+
+      <label for="file">Upload a photo/file (optional):</label>
+      <input type="file" name="attachment" id="file" />
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TechFixHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
