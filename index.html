@@ -1,44 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TechFixHub | Submit Your Order</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit your technical orders for quick solutions.">
+    <title>TechFixHub | Submit Your Technical Orders</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background-image: url('hero.jpg'); /* Replace with your own image */
+            background-size: cover;
+            color: white;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form label {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            display: block;
+        }
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        form button {
+            background-color: #333;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>TechFixHub</h1>
-      <p>Your One-Stop Solution for All Tech Needs</p>
-    </div>
-  </header>
+    <header>
+        <h1>Welcome to TechFixHub</h1>
+        <p>Your go-to platform for submitting technical orders</p>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2>Submit Your Technical Orders</h2>
+            <p>Looking for a tech solution? We are here to help! Fill out the form below to get started.</p>
+        </section>
+        
+        <section class="container">
+            <div class="form-container">
+                <h3>Order Form</h3>
+                <form action="https://formspree.io/f/manelbaq" method="POST">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
 
-  <section class="hero">
-    <img src="assets/hero.jpg" alt="Tech background" />
-  </section>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
 
-  <section class="form-section">
-    <h2>Submit Your Technical Order</h2>
-    <form action="https://formspree.io/f/mnqkoqey" method="POST" enctype="multipart/form-data">
-      <label for="name">Full Name:</label>
-      <input type="text" name="name" id="name" required />
+                    <label for="message">Details of the Order</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
 
-      <label for="email">Email Address:</label>
-      <input type="email" name="email" id="email" required />
-
-      <label for="description">Order Description:</label>
-      <textarea name="description" id="description" rows="5" required></textarea>
-
-      <label for="file">Upload a photo/file (optional):</label>
-      <input type="file" name="attachment" id="file" />
-
-      <button type="submit">Submit Order</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 TechFixHub. All rights reserved.</p>
-  </footer>
+                    <button type="submit">Submit Order</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 TechFixHub | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
